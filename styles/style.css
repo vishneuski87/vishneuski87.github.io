@@ -382,7 +382,7 @@ body {
 .contacts-address-item-mail:before,
 .contacts-address-item-location:before {
     content: " ";
-    background-size: contain;
+    background-size: cover;
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
@@ -398,7 +398,7 @@ body {
 }
 
 .contacts-address-item-location:before {
-    background-image: url("./../assets/images/location-icon.png");
+    background-image: url("./../assets/images/location-icon4.png");
 }
 
 .contacts-address-item-schedule:before {
@@ -677,5 +677,15 @@ label {
 
     .header-photo {
         background-position-x: center;
+    }
+
+    .contacts-address-headline-header,
+    .contact-form-headline-header {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .contact-form-headline-header {
+        margin-left: 0.25em;
     }
 }

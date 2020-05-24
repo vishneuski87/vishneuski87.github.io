@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.scroll-to-block').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.block-headers-about').offset().top
+      scrollTop: $('.block-headers-about').offset().top - 100
     }, 2000);
   });
   $('.navigation-list-link-main').on('click', (event) => {
