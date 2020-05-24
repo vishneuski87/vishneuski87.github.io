@@ -45,11 +45,17 @@ body {
     height: 4em;
     width: 100%;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     background-color: #495464;
     justify-content: space-around;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header-wrapper.sticky {
+    z-index: 1000;
+    opacity: 0.9;
 }
 
 .scroll-to-block {
@@ -569,7 +575,7 @@ label {
 .burger-icon-item {
     width: 100%;
     height: 0.25em;
-    background: #1e383c;
+    background: #bddae0;
     color: black;
     border-radius: 0.5em;
     transition: .5s ease-in-out;
@@ -612,8 +618,8 @@ label {
     .burger-icon {
         z-index: 10;
         position: fixed;
-        top: 1.2em;
-        left: 2em;
+        top: 1em;
+        left: 1em;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -654,9 +660,14 @@ label {
         width: calc(100% - 2em);
     }
 
+    .contacts-address-layout {
+        box-sizing: border-box;
+        padding-left: 1em;
+    }
+
     .europe-map img {
-        height: 25em;
-        max-height: 25em;
+        height: 10em;
+        max-height: 10em;
     }
 
     .service-cart-item {
