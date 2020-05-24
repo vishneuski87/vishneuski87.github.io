@@ -383,6 +383,7 @@ body {
 .contacts-address-item-location:before {
     content: " ";
     background-size: cover;
+    background-repeat: no-repeat;
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
@@ -398,7 +399,7 @@ body {
 }
 
 .contacts-address-item-location:before {
-    background-image: url("./../assets/images/location-icon4.png");
+    background-image: url("./../assets/images/location-icon.png");
 }
 
 .contacts-address-item-schedule:before {
