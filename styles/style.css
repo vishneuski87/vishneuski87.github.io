@@ -53,9 +53,6 @@ body {
 }
 
 .scroll-to-block {
-    /*background-image: url("./../assets/images/arrow-down.png");*/
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat;*/
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -74,8 +71,8 @@ body {
     margin: -1em;
     width: 1.5em;
     height: 1.5em;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
     transform: rotate(45deg);
     animation: animate 2s infinite;
 }
@@ -135,6 +132,7 @@ body {
 }
 
 .navigation-list-item-link {
+    white-space: nowrap;
     text-decoration: none;
     color: #f7f6f0;
 }
@@ -163,6 +161,7 @@ body {
 }
 
 .block-headers {
+    font-size: 3em;
     margin: 2em 0 1em;
     text-align: center;
     /*text-decoration: underline #63ace5;*/
@@ -372,6 +371,38 @@ body {
     width: calc(50% - 1em);
 }
 
+.contacts-address-item-schedule:before,
+.contacts-address-item-phone:before,
+.contacts-address-item-mail:before,
+.contacts-address-item-location:before {
+    content: " ";
+    background-size: contain;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+}
+
+.contacts-address-item-phone:before {
+    background-image: url("./../assets/images/phone-icon.png");
+}
+
+.contacts-address-item-mail:before {
+    background-image: url("./../assets/images/letter-icon.png");
+}
+
+.contacts-address-item-location:before {
+    background-image: url("./../assets/images/location-icon.png");
+}
+
+.contacts-address-item-schedule:before {
+    background-image: url("./../assets/images/clock-icon.png");
+}
+
+.contacts-address-item {
+    display: flex;
+}
+
 .contacts-form {
     width: calc(50% - 1em);
     display: flex;
@@ -464,7 +495,8 @@ label {
 
 .europe-map {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 2em;
+    border: 2px solid #495464;
 }
 
 .europe-map img {
@@ -508,10 +540,11 @@ label {
     width: 1em;
     height: 1em;
     margin-right: 0.5em;
+
 }
 
 .all-rights-reserved {
-    color: black;
+    color: #f7f6f0;
 }
 
 .scroll-to-top {
@@ -571,7 +604,7 @@ label {
     z-index: 10;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 35em) {
     .company-logo {
         flex-direction: column
     }
@@ -629,5 +662,9 @@ label {
     .service-cart-item {
         width: 22em;
         height: 22em;
+    }
+
+    .header-photo {
+        background-position-x: center;
     }
 }
