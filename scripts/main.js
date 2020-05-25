@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.scroll-to-block').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.block-headers-about').offset().top - 100
+      scrollTop: $('.block-headers-about').offset().top - 140
     }, 2000);
   });
   $('.navigation-list-link-main').on('click', (event) => {
@@ -12,7 +12,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.header-wrapper').offset().top - 100
+      scrollTop: $('.header-wrapper').offset().top - 140
     }, 'fast');
   });
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-about').offset().top - 100
+      scrollTop: $('.block-headers-about').offset().top - 140
     }, 'fast');
   });
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-service').offset().top - 100
+      scrollTop: $('.block-headers-service').offset().top - 140
     }, 'fast');
   });
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-trucks').offset().top - 100
+      scrollTop: $('.block-headers-trucks').offset().top - 140
     }, 'fast');
   });
 
@@ -60,13 +60,13 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-contacts').offset().top - 100
+      scrollTop: $('.block-headers-contacts').offset().top - 140
     }, 'fast');
   });
 
   $('.scroll-to-top').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.header-photo').offset().top - 100
+      scrollTop: $('.header-photo').offset().top - 140
     }, 'slow');
   });
 
@@ -90,8 +90,18 @@ $(document).ready(function () {
       $('.navigation').removeClass('active');
       $('.burger-icon-item').removeClass('rotate');
       $('.header-wrapper').addClass('sticky');
+      $('.logo').addClass('sticky');
+      $('.navigation-list-item-link').addClass('sticky');
+      $('.navigation-list-item-active').addClass('sticky');
+      $('.header-contacts').addClass('sticky');
+      $('.company-logo').addClass('sticky');
     } else {
       $('.header-wrapper').removeClass('sticky');
+      $('.logo').removeClass('sticky');
+      $('.navigation-list-item-link').removeClass('sticky');
+      $('.navigation-list-item-active').removeClass('sticky');
+      $('.header-contacts').removeClass('sticky');
+      $('.company-logo').removeClass('sticky');
     }
   });
 
