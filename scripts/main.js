@@ -66,7 +66,13 @@ $(document).ready(function () {
 
   $('.scroll-to-top').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.header-wrapper').offset().top
+      scrollTop: $('.header-photo').offset().top - 100
+    }, 'slow');
+  });
+
+  $('.service-order').on('click', (event) => {
+    $('html, body').animate({
+      scrollTop: $('.block-headers-contacts').offset().top
     }, 'fast');
   });
 
@@ -81,7 +87,6 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if ($(document).scrollTop() > 300) {
-      console.log('!!!!!');
       $('.navigation').removeClass('active');
       $('.burger-icon-item').removeClass('rotate');
       $('.header-wrapper').addClass('sticky');

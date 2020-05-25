@@ -167,10 +167,18 @@ body {
 }
 
 .block-headers {
-    font-size: 3em;
-    margin: 2em 0 1em;
-    text-align: center;
-    /*text-decoration: underline #63ace5;*/
+    position: relative;
+    font-size: 2.5em;
+}
+
+.block-headers:after {
+    position: absolute;
+    bottom: -0.25em;
+    left: 0;
+    content: "";
+    width: 1.5em;
+    height: 0.1em;
+    background-color: cadetblue
 }
 
 
@@ -408,6 +416,10 @@ body {
 
 .contacts-address-item {
     display: flex;
+}
+
+.contacts-address-item-location {
+   display: flex;
 }
 
 .contacts-form {
