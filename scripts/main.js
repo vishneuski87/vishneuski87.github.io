@@ -72,7 +72,7 @@ $(document).ready(function () {
 
   $('.service-order').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.block-headers-contacts').offset().top
+      scrollTop: $('.block-headers-contacts').offset().top - 140
     }, 'fast');
   });
 
@@ -90,14 +90,12 @@ $(document).ready(function () {
       $('.navigation').removeClass('active');
       $('.burger-icon-item').removeClass('rotate');
       $('.header-wrapper').addClass('sticky');
-      $('.logo').addClass('sticky');
       $('.navigation-list-item-link').addClass('sticky');
       $('.navigation-list-item-active').addClass('sticky');
       $('.header-contacts').addClass('sticky');
       $('.company-logo').addClass('sticky');
     } else {
       $('.header-wrapper').removeClass('sticky');
-      $('.logo').removeClass('sticky');
       $('.navigation-list-item-link').removeClass('sticky');
       $('.navigation-list-item-active').removeClass('sticky');
       $('.header-contacts').removeClass('sticky');
