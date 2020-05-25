@@ -704,7 +704,8 @@ label {
     height: 100%;
     width: 100%;
     transition: .5s;
-    background: #4f6170;
+    /*background: #4f6170;*/
+    background: #659DBD;
     overflow: scroll;
     z-index: 10;
 }

@@ -1,9 +1,10 @@
 $(document).ready(function () {
   $('.scroll-to-block').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.block-headers-about').offset().top - 140
+      scrollTop: $('.block-headers-about').offset().top - 110
     }, 2000);
   });
+
   $('.navigation-list-link-main').on('click', (event) => {
     let windowWidth = $(window).width();
     let navActive = ($('.navigation').hasClass("active"));
@@ -12,7 +13,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.header-wrapper').offset().top - 140
+      scrollTop: $('.header-photo').offset().top - 110
     }, 'fast');
   });
 
@@ -24,7 +25,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-about').offset().top - 140
+      scrollTop: $('.block-headers-about').offset().top - 110
     }, 'fast');
   });
 
@@ -36,7 +37,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-service').offset().top - 140
+      scrollTop: $('.block-headers-service').offset().top - 110
     }, 'fast');
   });
 
@@ -48,7 +49,7 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-trucks').offset().top - 140
+      scrollTop: $('.block-headers-trucks').offset().top - 110
     }, 'fast');
   });
 
@@ -60,19 +61,25 @@ $(document).ready(function () {
       $('.burger-icon-item').toggleClass('rotate');
     }
     $('html, body').animate({
-      scrollTop: $('.block-headers-contacts').offset().top - 140
+      scrollTop: $('.block-headers-contacts').offset().top - 110
     }, 'fast');
   });
 
   $('.scroll-to-top').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.header-photo').offset().top - 140
+      scrollTop: $('.header-photo').offset().top - 110
     }, 'slow');
   });
 
   $('.service-order').on('click', (event) => {
     $('html, body').animate({
-      scrollTop: $('.block-headers-contacts').offset().top - 140
+      scrollTop: $('.block-headers-contacts').offset().top - 110
+    }, 'fast');
+  });
+
+  $('.header-contacts-mail').on('click', (event) => {
+    $('html, body').animate({
+      scrollTop: $('.contact-form-headline-header').offset().top - 118
     }, 'fast');
   });
 
