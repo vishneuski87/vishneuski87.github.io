@@ -587,12 +587,11 @@ body {
 }
 
 .contacts-button-wrapper {
+    display: flex;
     box-sizing: border-box;
-    width: 8em;
     height: 2em;
     line-height: 2em;
     margin-top: 1em;
-    border: 2px solid #b1b7b3;
     text-overflow: ellipsis;
     white-space: nowrap;
     outline: none;
@@ -617,6 +616,8 @@ input {
     text-decoration: none;
     color: gray;
     text-transform: uppercase;
+    padding: 0 0.5em;
+    height: 2.5em;
 }
 
 label {

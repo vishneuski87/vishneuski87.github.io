@@ -51,14 +51,15 @@
     <h1 class="block-headers block-headers-about">О нас</h1>
     <div class="about-us-wrapper">
       <div class="about-us-photo"></div>
-      <div class="about-us-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur
-        assumenda corporis culpa cumque cupiditate, distinctio dolorum et ex illum libero minus molestiae nihil optio
-        praesentium quis reprehenderit vel voluptas. Eveniet in inventore laudantium mollitia obcaecati provident quis!
-        Ab ad aliquid amet animi asperiores beatae commodi consectetur delectus deleniti dicta dolore dolorem earum enim
-        eveniet exercitationem explicabo facilis fugiat hic, illum ipsa ipsam itaque laboriosam laborum libero natus
-        nesciunt officia provident quas quibusdam quisquam quod quos recusandae repellendus sed suscipit tempore totam.
-        Adipisci assumenda in labore, magnam porro quod rem vitae! Ad alias doloremque illum maiores, officia sint
-        soluta voluptatem?
+      <div class="about-us-description">Перевозка грузов автомобильным транспортом – это наиболее удобный и быстрый
+        способ транспортировки товара. Что касается оказания услуг в сфере автомобильных грузовых перевозок по РБ, РФ и
+        странам Западной Европы, специалисты нашей компании могут предложить высокую скорость доставки, услуги по
+        страхованию и оформлению необходимой документации.Автомобильные перевозки грузов по Беларуси – это отлаженная
+        цепочка действий, которые разработаны для обеспечения клиентам максимального удобства. Заказчик получает
+        гарантию по сохранности товара и соблюдению сроков доставки в заданный населенный пункт. Главные достоинства
+        автомобильных грузоперевозок – это их универсальность и доступность, которые позволяют обеспечить доставку в тех
+        случаях, когда перевозка по железной дороге или воздуху невыгодна или неуместна. Наши специалисты, опираясь на
+        свой опыт в сфере логистики, разработали оптимальные маршруты с максимальной безопасностью транспортировки.
       </div>
     </div>
     <h1 class="block-headers block-headers-service">Услуги</h1>
@@ -99,10 +100,10 @@
         <div class="process-step-description">Доставка</div>
         <div class="process-step-image process-step-image-four"></div>
       </div>
-<!--      <div class="process-step-item process-step-item-five">-->
-<!--        <div class="process-step-description">Payment</div>-->
-<!--        <div class="process-step-image process-step-image-five"></div>-->
-<!--      </div>-->
+      <!--      <div class="process-step-item process-step-item-five">-->
+      <!--        <div class="process-step-description">Payment</div>-->
+      <!--        <div class="process-step-image process-step-image-five"></div>-->
+      <!--      </div>-->
     </div>
     <h1 class="block-headers block-headers-trucks">Авто</h1>
     <div class="auto-park-block-wrapper">
@@ -148,6 +149,11 @@
       </section>
       <section class="contacts-form">
         <form action="" class="contacts-message">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Cargo trans ">
+          <input type="hidden" name="admin_email" value="vishneuski87@gmail.com">
+          <input type="hidden" name="form_subject" value="Form">
+          <!-- END Hidden Required Fields -->
           <div class="contacts-message-form-input">
             <div class="contacts-form-headline">
               <img class="pencil" src='./assets/images/pen2.png' alt="pen"/>
@@ -155,27 +161,25 @@
             </div>
             <div class="client-data">
               <div class="contacts-message-form-input-field">
-                <!--                <label for="name">Имя</label>-->
-                <input type="text" id="name" placeholder="Ваше имя">
+                <input name="name" type="text" id="name" placeholder="Ваше имя">
               </div>
               <div class="contacts-message-form-input-field">
-                <!--                <label for="phone">Телефон / email</label>-->
-                <input type="text" id="phone" placeholder="Ваш телефон">
+                <input name="phone" type="text" id="phone" placeholder="Ваш телефон">
               </div>
               <div class="contacts-message-form-input-field">
-                <!--                <label for="phone">Телефон / email</label>-->
-                <input type="text" id="email" placeholder="Ваш e-mail">
+                <input name="email" type="text" id="email" placeholder="Ваш e-mail">
               </div>
             </div>
             <div class="contacts-message-form-message-area">
-              <!--              <label for="message">Сообщение<label>-->
               <textarea name="message" class="contacts-message-form-message-area-field" id="message" rows="10"
                         placeholder="Введите сообщение"></textarea>
             </div>
             <div class="contacts-button-wrapper">
-              <input type="submit" hidden>
-              <a href="#" class="button contacts-button" tabindex="0" role="button">Отправить
-              </a>
+              <input class="button contacts-button"
+                     type="submit"
+                     tabindex="0"
+                     role="button"
+                     value="Отправить">
             </div>
           </div>
         </form>
