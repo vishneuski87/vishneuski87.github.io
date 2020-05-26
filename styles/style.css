@@ -42,7 +42,7 @@ body {
 .header-wrapper {
     top: 0;
     left: 0;
-    height: 6em;
+    height: 5em;
     width: 100%;
     margin: 0 auto;
     position: fixed;
@@ -407,19 +407,19 @@ body {
 }
 
 .process-step-image-one {
-    background-image: url(./../assets/images/step-1.png);
+    background-image: url(./../assets/images/phone-blue.png);
 }
 
 .process-step-image-two {
-    background-image: url(./../assets/images/step-2.png);
+    background-image: url(./../assets/images/calculator-blue.png);
 }
 
 .process-step-image-three {
-    background-image: url(./../assets/images/step-3.png);
+    background-image: url(./../assets/images/partnership-blue.png);
 }
 
 .process-step-image-four {
-    background-image: url(./../assets/images/step-4.png);
+    background-image: url(./../assets/images/truck-blue.png);
 }
 
 .process-step-image-five {
@@ -479,9 +479,12 @@ body {
 }
 
 .auto-item-description {
+    box-sizing: border-box;
+    padding: 0.5em;
     width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .contacts-wrapper {
@@ -832,6 +835,10 @@ label {
     .auto-park-block-wrapper {
         flex-direction: column;
         align-items: center;
+    }
+
+    .process-steps-wrapper {
+        flex-direction: column;
     }
 
     .header-photo {
