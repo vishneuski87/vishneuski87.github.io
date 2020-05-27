@@ -17,6 +17,18 @@ $(document).ready(function () {
     return false;
   });
 
+  $('textarea').on('focus', () => {
+    if ($(window).width() <= 800) {
+      $('.header-wrapper').addClass('write-mode');
+    }
+  });
+
+  $('textarea').on('focusout', () => {
+    if ($(window).width() <= 800) {
+      $('.header-wrapper').removeClass('write-mode');
+    }
+  });
+
   $('.scroll-to-block').on('click', (event) => {
     $('html, body').animate({
       scrollTop: $('.block-headers-about').offset().top - 110

@@ -60,6 +60,10 @@ body {
     background-color: #659DBD;
 }
 
+.header-wrapper.write-mode {
+    display: none;
+}
+
 .navbar {
     width: 100%;
     height: 100%;
@@ -212,6 +216,7 @@ body {
     left: -1.5em;
     top: -0.1em;
 }
+
 .header-contacts-mail {
     position: relative;
     text-decoration: none;
@@ -531,7 +536,7 @@ body {
 }
 
 .contacts-address-item-location {
-   display: flex;
+    display: flex;
 }
 
 .contacts-form {
@@ -626,7 +631,7 @@ label {
 }
 
 .europe-map {
-    width: 95%;
+    width: 100%;
     margin: 0 auto 2em;
     border: 2px solid #495464;
 }
@@ -737,7 +742,13 @@ label {
     z-index: 10;
 }
 
-@media(max-width: 50em) {
+@media (min-width: 70em) {
+    .europe-map {
+        width: 80%;
+    }
+}
+
+@media (max-width: 50em) {
     .company-logo {
         top: 0;
     }
