@@ -17,6 +17,17 @@ $(document).ready(function () {
     return false;
   });
 
+  //check if textarea in viewport
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
   $('textarea').on('focus', () => {
     if ($(window).width() <= 800) {
       $('.header-wrapper').addClass('write-mode');
@@ -25,6 +36,12 @@ $(document).ready(function () {
 
   $('textarea').on('focusout', () => {
     if ($(window).width() <= 800) {
+      $('.header-wrapper').removeClass('write-mode');
+    }
+  });
+
+  $(window).on('resize scroll', function() {
+    if (!$('textarea').isInViewport()) {
       $('.header-wrapper').removeClass('write-mode');
     }
   });
