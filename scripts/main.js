@@ -29,7 +29,7 @@ $(document).ready(function () {
   };
 
   $('textarea').on('focus', () => {
-    if ($(window).width() <= 800) {
+    if ($(window).width() <= 800 && $('textarea').isInViewport()) {
       $('.header-wrapper').addClass('write-mode');
     }
   });
